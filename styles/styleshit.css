@@ -1,0 +1,95 @@
+section{
+    height: 110%;
+    width: 100%;
+    position: static;   
+}
+
+nav{
+    width: 30px;
+    right: 30px;
+    height: 100%;
+    position: fixed;
+    top: 35%;
+}
+
+#top{
+    font-family: 'Arvo', serif;
+    text-align: center;
+    font-size: 32px;
+    align-items: center;
+}
+
+#top h1{
+    display: inline;
+}
+
+#top img{
+    padding-top: 70px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.firstname{
+    transition: color 0.5s;
+}
+
+.firstname:hover{
+    color: red;
+}
+
+#formation{   
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-color: burlywood;
+}
+
+#achievements{
+    background-color: bisque;
+}
+
+article{
+    width: 40%;
+    display: inline-block;
+}
+
+article h2{
+    text-align: center;
+}
+
+article li{
+    margin-right: 20px;
+}
+
+#education{
+    background-color: azure;
+    margin: 40 auto 40 30;
+    float: left;
+}
+
+#workexp{
+    background-color: aquamarine;
+    margin: 40 30 40 auto;
+    float: right;
+}
+
+footer{
+    height: 50px;
+    background-color: #37464f;
+    color: white;
+}
+footer h5{
+    margin: 0 0 0 10;
+    padding-top: 18px;
+    display: inline-block;
+}
+#links{
+    display: inline-block;
+    float: right;
+}
+#links img{
+    margin: 10 5 10 5;
+    width: 30px;
+}
