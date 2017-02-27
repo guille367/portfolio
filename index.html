@@ -4,16 +4,28 @@
         <link href='./styles/styleshit.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
+<<<<<<< HEAD
         
         <!--Presentacion-->
         <section id="top">
             <div id="image">
                 <img src="img/pp2.jpg" />
+=======
+        <button onclick="consumirApi()">consumir</button>
+        <!--Presentacion-->
+        <section id="top">
+            <div id="image">
+                <img src="img/pp.jpg" />
+>>>>>>> gh-pages
             </div>
             <div id="fullname">
                 <h1 class="firstname">Guillermo</h1> <h1 class="lastname">Ponce Andrés</h1>
             </div>
+<<<<<<< HEAD
             <span>Web Developer</span>
+=======
+            <span class="fadein">Web Developer</span>
+>>>>>>> gh-pages
         </section>
         
         <!--ok ladies now lets get in formation-->
@@ -60,8 +72,33 @@ Tareas de Mantenimiento del Sistema. Corrección de errores del programa.
         </section>
         
         <section id="achievements">
+<<<<<<< HEAD
         
         </section>
+=======
+            <div id="externalpages">
+                <div id="cs">
+                    <img class="pagelogo" src="img/logo-code-school-ed303a5929bc9fc4c629ae16671533065fb987e642d2e1ff2ace2fded9feab50.svg">
+
+                </div><!--
+                <div id="hr">
+                    <img class="pagelogo" src="img/logo_wordmark-f5c5eb61ab0a154c3ed9eda24d0b9e31.svg">
+                </div>-->
+            </div>
+            
+            <footer>
+                <h5>asdas</h5>
+                <div id="links">
+                    <a href="https://github.com/guille367/"><img src="img/github.svg"></a>
+                    <a href="https://www.linkedin.com/in/guillermo-ponce-andr%C3%A9s-6286a3aa/"><img src="img/linkedin.svg"></a>
+                    <a href="https://www.hackerrank.com/guillermo_gpa80"><img src="img/hackerrank.svg"></a>
+                    <a href="https://www.freecodecamp.com/guille367"><img src="img/freecodecamp.svg"></a>
+                    <a href="https://www.codeschool.com/users/guille367"><img src="img/codeschool.svg"></a>
+                </div>
+            </footer>
+        </section>
+        
+>>>>>>> gh-pages
         <!--Navegación-->  <!--Va?-->
         <!--<nav>
             <ul>
@@ -70,6 +107,7 @@ Tareas de Mantenimiento del Sistema. Corrección de errores del programa.
                 <a href="#formation"><li></li></a>
             </ul>
         </nav>-->
+<<<<<<< HEAD
         
         <footer>
             <h5>asdas</h5>
@@ -82,4 +120,34 @@ Tareas de Mantenimiento del Sistema. Corrección de errores del programa.
             </div>
         </footer>
     </body>
+=======
+    </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="scripts/slick-1.6.0/slick/slick.js"></script>
+    <link href="scripts/slick-1.6.0/slick/slick.css" rel="stylesheet"/>
+    <link href="scripts/slick-1.6.0/slick/slick-theme.css" rel="stylesheet"/>
+    <script>
+        
+       /* $(document).ready(function(){
+           $('#externalpages').slick();
+        });
+        */
+        function consumirApi(){
+            $.get('https://www.hackerrank.com/rest/hackers/guillermo_gpa80/recent_challenges?cursor=null&limit=5&response_version=v2',function(d,e){
+                console.log(d);
+            })
+            
+            
+            $.ajax({
+         url: "https://www.codeschool.com/users/guille367.json",
+         type: "GET",
+         headers:{
+           'Origin':'notnull'  
+         },
+         success: function() { alert('Success!' + authHeader); }
+            });
+            
+        }
+    </script>
+>>>>>>> gh-pages
 </html>
