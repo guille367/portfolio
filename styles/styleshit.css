@@ -1,15 +1,7 @@
 section{
-    height: 110%;
+    height: 105%;
     width: 100%;
     position: static;   
-}
-
-nav{
-    width: 30px;
-    right: 30px;
-    height: 100%;
-    position: fixed;
-    top: 35%;
 }
 
 #top{
@@ -17,6 +9,25 @@ nav{
     text-align: center;
     font-size: 32px;
     align-items: center;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadein{
+    animation-name: reset, fade-in;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
 }
 
 #top h1{
@@ -40,7 +51,7 @@ nav{
 }
 
 #formation{   
-    display: flex;
+    display: inline-block;
     min-height: 100vh;
     align-items: center;
     background-color: burlywood;
@@ -75,6 +86,11 @@ article li{
     float: right;
 }
 
+#achievements .pagelogo{
+    margin: 40 0 0 50;
+    width: 300px;    
+}
+
 footer{
     height: 50px;
     background-color: #37464f;
@@ -93,3 +109,19 @@ footer h5{
     margin: 10 5 10 5;
     width: 30px;
 }
+#externalpages{
+    
+}
+#achievements footer{
+    
+}
+/*
+
+nav{
+    width: 30px;
+    right: 30px;
+    height: 100%;
+    position: fixed;
+    top: 35%;
+}
+*/
